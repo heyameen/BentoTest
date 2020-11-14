@@ -21,7 +21,7 @@ const ContactDetailsForm = ({ onClose, selectedData }) => {
     
     const onSubmit = async (values) => {
         setLoading(true)
-        api.patch(`/users/${data.id}`, values)
+        api.patch(`/users/${selectedData.contact.id}`, values)
         .then(res => {            
             res.status === 200 ? 
                 updateData(values)

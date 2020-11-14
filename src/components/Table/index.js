@@ -155,7 +155,7 @@ const DataTable = () => {
                 </TableBody>
             </Table>
             <TablePagination
-                rowsPerPageOptions={[6, 12]}
+                rowsPerPageOptions={[6]}
                 component="div"
                 count={total}
                 rowsPerPage={rowsPerPage}
